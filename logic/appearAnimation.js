@@ -1,3 +1,5 @@
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+if(!isMobile)
 $(document).ready(function(e){
     $('.base').css({'opacity':0, 'top':'40%'});
     $('.backgroundImage').css({'opacity':0});

@@ -104,6 +104,7 @@ html,body
   -webkit-transform: translate(-50%,0%);
       -ms-transform: translate(-50%,0%);
           transform: translate(-50%,0%);
+  white-space: nowrap;
 
   h1{
     font-family: oswaldBold;
@@ -207,4 +208,81 @@ html,body
       -ms-transform: translate(-51%,-51%);
           transform: translate(-51%,-51%);
 
+}
+
+@media (max-width: 575px)
+{
+  .base
+  {
+    top:55%;
+    height: 450px;
+  }
+
+  .linkButton
+  {
+    margin-top:12px;
+  }
+
+  body
+  {
+    background: url("../assets/images/backgroundImage.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+{
+  .base
+  {
+    top:30%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+{
+  .base
+  {
+    top:40%;
+  }
+
+  body
+  {
+    background: url("../assets/images/backgroundImage.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+{
+  .base
+  {
+    top:50%;
+  }
+
+  body
+  {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .backgroundImage
+  {
+    width:110%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+{
+  .base
+  {
+    top:50%;
+  }
+
+  body
+  {
+    background-color: rgb(255, 255, 255);
+  }
 }
