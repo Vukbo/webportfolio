@@ -236,12 +236,37 @@ html,body
   }
 }
 
+@media (max-height: 576px)
+{
+  body
+  {
+    background: url("../assets/images/backgroundImage.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  .base
+  {
+    top:55%;
+  }
+
+  .profileRound
+  {
+    width:150px;
+    height:150px;
+    top:5%;
+  }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px)
 {
   .base
   {
-    top:30%;
+    top:45%;
+  }
+  body
+  {
+    background: url("../assets/images/backgroundImage.jpeg") no-repeat center center fixed;
+    background-size: cover;
   }
 }
 
