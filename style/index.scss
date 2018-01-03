@@ -1,0 +1,193 @@
+//Colors
+$baseColor: rgb(255, 255, 255);
+$backgroundColor: rgb(246, 246, 246);
+$acentColor: rgb(58, 192, 254);
+
+//hover
+$acentColorHover: rgb(101, 213, 255);
+
+//General Style
+$borderRadius: 5px;
+$containerHeight: 300px;
+
+//Font
+$fontRootPath : "../assets/fonts/";
+$fontColorBase: rgb(159, 159, 159);
+$fontColorSecondary: rgb(204, 204, 204);
+$fontColorAccent: rgb(255, 255, 255);
+
+$linkButtonHeight:45px;
+
+@font-face {
+  font-family: oswaldBold;
+  src:url($fontRootPath+"Oswald-Bold.ttf");
+}
+
+@font-face {
+  font-family: oswaldLight;
+  src:url($fontRootPath+"Oswald-Light.ttf");
+}
+
+@font-face {
+  font-family: robotoCondensedLight;
+  src:url($fontRootPath+"RobotoCondensed-Light.ttf");
+}
+
+html,body
+{
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  background-color: rgb(255, 255, 255);
+  //background: url("../assets/images/backgroundImage.jpeg") no-repeat center center fixed;
+  //background-size: cover;
+  overflow: hidden;
+}
+
+.darker
+{
+  position: absolute;
+  width:100%;
+  height:100%;
+  left:0px;
+  top:0px;
+  background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+.base
+{
+  background-color: $baseColor;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  height:$containerHeight;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  padding:0px;
+}
+
+.profileRound
+{
+  position: absolute;
+  left:50%;
+  top:0%;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+  background-color: $baseColor;
+  border: $borderRadius solid rgb(255, 255, 255);
+  overflow:hidden;
+  display: inline-block;
+}
+
+.profileImg
+{
+  width:100%;
+}
+
+.headingText
+{
+  position: absolute;
+  left:50%;
+  top:100px;
+  transform: translate(-50%,0%);
+
+  h1{
+    font-family: oswaldBold;
+    color: $fontColorBase;
+    font-size: 32pt;
+    margin:0px;
+
+  }
+
+  h2
+  {
+    font-family: oswaldLight;
+    color: $fontColorSecondary;
+    fonz-size: 28pt;
+    margin-top:13px;
+    line-height: 0px;
+  }
+
+}
+
+.linkContainer
+{
+  position: absolute;
+  width: 100%;
+  left:0px;
+  bottom: 0px;
+  margin: 0px;
+  padding: 10px 5px 10px 5px;
+}
+
+.linkButton
+{
+
+  height:$linkButtonHeight;
+  background-color: $acentColor;
+  //background: linear-gradient(#54dcfe,#1a9cf9);
+  border-radius: $borderRadius;
+  text-decoration: none;
+  padding: 0px;
+  margin-left: 5px;
+  margin-right:5px;
+  transition: 0.2s background-color;
+
+  h3
+  {
+    font-family: robotoCondensedLight;
+    color: $fontColorAccent;
+    font-size: 20pt;
+    text-align: center;
+    line-height: $linkButtonHeight;
+    font-weight:lighter;
+  }
+
+  a
+  {
+    text-decoration: none;
+    display:block;
+    width:100%;
+    height:100%;
+    padding:0px;
+    left: 0px;
+    top:0px;
+    position: absolute;
+  }
+
+  a:hover
+  {
+    text-decoration: none;
+  }
+
+}
+
+.linkButton:hover
+{
+  background-color: $acentColorHover;
+  //background: linear-gradient(#78f3ff,#37a3fb);
+}
+
+
+.circleEffect
+{
+
+  border-radius: 50%;
+  border: 8px solid $acentColorHover;
+  position: absolute;
+  transform:translate(-50%,-50%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.backgroundImage
+{
+  position: absolute;
+  right:50%;
+  width:105%;
+  transform: translate(-51%,-51%);
+
+}
