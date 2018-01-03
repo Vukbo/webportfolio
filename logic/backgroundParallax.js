@@ -15,6 +15,8 @@ var ySpeed = 0.008 ;
 
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
+/*TODO make paralax Effect possible for mutliple objects/layers and fix the bug
+       with the paralax clipping to the mouse */
 if(!isMobile)
 $(document).on("mousemove", function(e){
   maxX = $(document).width();
