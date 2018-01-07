@@ -1,6 +1,6 @@
 var isReady = true;
 var counter = 0;
-$(document).bind("click touchstart",function(e){
+$(document).bind("click tap",function(e){
   counter++;
   if(isReady){
     $('body').append('<div class="circleEffect" id="circleEffect'+counter+'"></div>')
